@@ -1,0 +1,10 @@
+---
+- name: move file in remote location
+  hosts: mani
+  tasks:
+  - name: mv file
+    copy:
+     remote_src: true
+     src: /home/admin1/mani.txt
+     dest: /home/admin1/test   
+  

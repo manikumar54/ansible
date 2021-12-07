@@ -1,0 +1,9 @@
+---
+- name: delete file
+  hosts: mani
+  become: yes
+  tasks:
+  - name: delete file
+    file:
+     path: /home/admin1/nag
+     state: absent     
