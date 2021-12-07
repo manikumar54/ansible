@@ -1,0 +1,6 @@
+---
+- name: copy the j2 file
+  template:
+   src: index.j2
+   dest: /var/www/html
+  notify: restarted   

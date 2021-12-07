@@ -1,0 +1,13 @@
+---
+- name: creating directory
+  hosts: mani
+  become: yes
+  tasks:
+  - name: create directory
+    file:
+     path: /home/admin1/nag
+     state: directory
+     group: admin1
+     owner: admin1
+         
+ 

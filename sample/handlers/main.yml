@@ -1,0 +1,6 @@
+---
+# handlers file for sample
+- name: restarted
+  service:
+   name: apache2
+   state: restarted   

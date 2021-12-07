@@ -1,0 +1,4 @@
+---
+# tasks file for sample
+- include_tasks: apache.yml
+- include_tasks: copy.yml   

@@ -1,0 +1,6 @@
+---
+- name: install apache through roles
+  hosts: mani
+  become: yes
+  roles:
+     - { role: sample }        

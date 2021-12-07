@@ -1,0 +1,9 @@
+---
+- name: create the file
+  hosts: mani
+  become: yes
+  tasks:
+  - name: create the file
+    file:
+     path: /home/admin1/mani.txt
+     state: touch     
